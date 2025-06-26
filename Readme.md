@@ -75,8 +75,10 @@ Follow these simple steps to install the configuration.
     ```
     > [!WARNING]
     > This will overwrite any existing configurations you have for these applications. Back up your files if necessary!
+3.**Change Input Configuration**
+    Replace the touchpad name with your touchpad name
 
-3.  **Launch Sway**
+4.  **Launch Sway**
     Log out of your current desktop session. From your display manager (like GDM or LightDM), select "Sway" and log in. Alternatively, you can start Sway from a TTY by running:
     ```bash
     sway
