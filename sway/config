@@ -35,7 +35,7 @@ exec swaymsg opacity 0.95
 # └──────────────────────────────────────────────────────────────────────────────┘
 
 # Status bar (uncomment to enable)
-exec_always waybar
+exec_always bash -c 'pkill waybar; waybar &'
 
 # Wallpaper (uncomment and set path)
 exec_always swaybg -i /home/kodliebe/Pictures/telepics/quit-wallpaper.jpg --mode fill
@@ -90,6 +90,11 @@ input "1267:12541:ELAN0712:00_04F3:30FD_Touchpad" {
     scroll_method two_finger   # Use two-finger scrolling
     dwt enabled                # Enable disable-while-typing
 }
+
+input "type:touchpad" {
+    tap enabled
+}
+
 
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
